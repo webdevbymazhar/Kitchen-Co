@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Animation for circular progress */
+@keyframes progress {
+    from {
+      stroke-dashoffset: 100;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  
+  .animate-progress {
+    animation: progress 1.5s ease-in-out forwards;
+  }
+  
+  /* Order card shadow and hover effects */
+  .hover:-translate-y-2 {
+    transition: transform 0.3s ease;
+  }
+  
+  .hover:-translate-y-2:hover {
+    transform: translateY(-0.5rem);
+  }
+  
+
+  /* Styling the scrollbar */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+/* Track of the scrollbar */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Background color of the scrollbar track */
+  border-radius: 10px; /* Rounding the track edges */
+}
+
+/* Thumb of the scrollbar */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #4c6ef5, #3b82f6); /* Gradient color for the thumb */
+  border-radius: 10px; /* Rounding the thumb edges */
+  border: 3px solid #f1f1f1; /* Adds space around the thumb for a better appearance */
+}
+
+/* Thumb hover effect */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #3b82f6, #2563eb); /* Darken on hover */
+}
+
+/* Add this to your CSS file */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Apply the animation to the loader */
+.animate-spin {
+  animation: spin 2s linear infinite;
+}
+
+
+/* In your globals.css or in Tailwind's @layer directive if using Tailwind JIT mode */
+@keyframes modalIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-modal-in {
+  animation: modalIn 0.5s ease-out;
+}
