@@ -23,7 +23,7 @@ export default function Footer() {
               </h2>
             </div>
             <p className="text-sm mb-4 leading-relaxed text-gray-300 hover:text-gray-100 transition-colors duration-300">
-              Experience culinary excellence at Al-Tastehub. Our passionate chefs craft unforgettable dishes that blend tradition with innovation.
+              Experience culinary excellence at Kitchen & Co. Our passionate chefs craft unforgettable dishes that blend tradition with innovation.
             </p>
             <Link href="#" className="inline-flex items-center group px-4 py-2 bg-orange-500 text-white rounded-full hover:bg-orange-600 transition-colors duration-300">
               <span className="text-sm font-semibold">Explore Our Story</span>
